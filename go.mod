@@ -1,4 +1,4 @@
-module github.com/likexian/whois-parser
+module github.com/1k-off/whois-parser
 
 go 1.17
 

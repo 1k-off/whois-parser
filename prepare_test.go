@@ -49,7 +49,7 @@ func TestPrepare(t *testing.T) {
 
 		whoisRaw, err := xfile.ReadText(noterrorDir + "/" + v.Name)
 		assert.Nil(t, err)
-
+		t.Log("working on " + v.Name)
 		whoisPrepare, prepared := Prepare(whoisRaw, extension)
 		if prepared {
 			prePrepare := ""
@@ -59,10 +59,12 @@ func TestPrepare(t *testing.T) {
 			if xfile.Exists(preFile) {
 				prePrepare, err = xfile.ReadText(preFile)
 				assert.Nil(t, err)
+			} else {
+				err = xfile.WriteText(preFile, whoisPrepare)
+				assert.Nil(t, err)
+				prePrepare, err = xfile.ReadText(preFile)
+				assert.Nil(t, err)
 			}
-
-			err = xfile.WriteText(preFile, whoisPrepare)
-			assert.Nil(t, err)
 
 			if prePrepare != "" {
 				assert.Equal(t, whoisPrepare, prePrepare)

@@ -1,2 +1,4 @@
 .DS_Store
 rule
+testdata/noterror/*.pre
+testdata/noterror/*.json

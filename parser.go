@@ -65,7 +65,6 @@ func Parse(text string) (whoisInfo WhoisInfo, err error) { //nolint:cyclop
 
 	domain.Name, _ = idna.ToASCII(name)
 	domain.Extension, _ = idna.ToASCII(extension)
-
 	whoisText, _ := Prepare(text, domain.Extension)
 	whoisLines := strings.Split(whoisText, "\n")
 	for i := 0; i < len(whoisLines); i++ {
@@ -241,7 +240,7 @@ func searchDomain(text string) (name, extension string) {
 	}
 
 	if name == "" {
-		r := regexp.MustCompile(`(?i)\[?domain\:?(\s*\_?name)?\]?[\s\.]*\:?\s*([^\s\,\;\(\)\.]{2,})\n`)
+		r := regexp.MustCompile(`(?i)[?domain\:?(\s*\_?name)?]?[\s\.]*\:?\s*([^\s\,\;\(\)\.]{2,})\n`)
 		m := r.FindStringSubmatch(text)
 		if len(m) > 0 {
 			name = strings.TrimSpace(m[2])

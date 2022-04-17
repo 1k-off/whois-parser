@@ -12,9 +12,6 @@ If there is any problem, please feel free to open a new issue.
 
 | extension | whois | output | verified |
 | --------- | ----- | ------ | :------: |
-| . | [cn](cn_cn) | [cn](cn_cn.json) | √ |
-| . | [com](com_com) | [com](com_com.json) | √ |
-| . | [google](google_google) | [google](google_google.json) | √ |
 | .ac | [git.ac](ac_git.ac) | [git.ac](ac_git.ac.json) | √ |
 | .ac | [google.ac](ac_google.ac) | [google.ac](ac_google.ac.json) | √ |
 | .aero | [google.aero](aero_google.aero) | [google.aero](aero_google.aero.json) | √ |
@@ -25,6 +22,7 @@ If there is any problem, please feel free to open a new issue.
 | .aq | [ats.aq](aq_ats.aq) | [ats.aq](aq_ats.aq.json) | √ |
 | .asia | [git.asia](asia_git.asia) | [git.asia](asia_git.asia.json) | √ |
 | .asia | [google.asia](asia_google.asia) | [google.asia](asia_google.asia.json) | √ |
+| .at | [google.at](at_google.at) | [google.at](at_google.at.json) | √ |
 | .au | [acma.gov.au](au_acma.gov.au) | [acma.gov.au](au_acma.gov.au.json) | √ |
 | .au | [google.com.au](au_google.com.au) | [google.com.au](au_google.com.au.json) | √ |
 | .berlin | [google.berlin](berlin_google.berlin) | [google.berlin](berlin_google.berlin.json) | √ |
@@ -151,6 +149,7 @@ If there is any problem, please feel free to open a new issue.
 | .sexy | [line.sexy](sexy_line.sexy) | [line.sexy](sexy_line.sexy.json) | √ |
 | .sh | [git.sh](sh_git.sh) | [git.sh](sh_git.sh.json) | √ |
 | .sh | [google.sh](sh_google.sh) | [google.sh](sh_google.sh.json) | √ |
+| .sk | [google.sk](sk_google.sk) | [google.sk](sk_google.sk.json) | √ |
 | .su | [git.su](su_git.su) | [git.su](su_git.su.json) | √ |
 | .su | [google.su](su_google.su) | [google.su](su_google.su.json) | √ |
 | .tel | [github.tel](tel_github.tel) | [github.tel](tel_github.tel.json) | √ |
